@@ -1,0 +1,48 @@
+% Compile with pdfLaTeX
+
+\documentclass[11pt, a4, sans]{moderncv}
+
+\moderncvstyle{classic}
+    \moderncvcolor{blue}
+    \renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{tikz}
+
+\usepackage{xcolor}
+    \definecolor{MyBlack}{rgb}{0,0,0}% black
+    \definecolor{MyLightBlue}{rgb}{0.22,0.45,0.70}% light blue
+    \definecolor{MyDarkBlue}{rgb}{0.45,0.45,0.45}% dark grey
+
+\usepackage{multicol}
+
+\usepackage{fontawesome}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hanging}
+\usepackage{geometry}
+    \geometry{
+		left=2cm,
+		right=2cm,
+		top=1.5cm,
+		bottom=2cm,
+		heightrounded,
+    }
+%
+% \title{Curriculum Vit\ae{}}
+%
+\input{tex/personal_information.tex}
+\input{tex/header_and_footer.tex}
+%
+\begin{document}
+    \thispagestyle{empty}
+    \maketitle
+%
+\input{tex/preamble.tex}
+\input{tex/positions.tex}
+\input{tex/education.tex}
+\input{tex/awards.tex}
+\input{tex/publications.tex}
+\input{tex/reviews.tex}
+\input{tex/skills.tex}
+%
+\end{document}
