@@ -1,0 +1,311 @@
+% Compile with pdfLaTeX
+
+%%%%%%%%%%%%%%
+%% PREAMBLE %%
+%%%%%%%%%%%%%%
+
+\documentclass[11pt, letterpaper, roman]{moderncv}
+\moderncvstyle{classic}
+    \moderncvcolor{blue}
+    \renewcommand{\familydefault}{\sfdefault}
+\usepackage{tikz}
+\usepackage{xcolor}
+    \definecolor{MyBlack}{rgb}{0,0,0}% black
+    \definecolor{MyLightBlue}{rgb}{0.22,0.45,0.70}% light blue
+    \definecolor{MyDarkBlue}{rgb}{0.45,0.45,0.45}% dark grey
+\usepackage{multicol}
+\usepackage{fontawesome}
+\usepackage[utf8]{inputenc}
+\usepackage{hanging}
+\usepackage{geometry}
+    \geometry{
+		left=1.5cm,
+		right=1.5cm,
+		top=0.5cm,
+		bottom=1.5cm,
+		heightrounded,
+    }
+
+%%%%%%%%%%%
+%% TITLE %%
+%%%%%%%%%%%
+
+% \title{Résumé}
+% \title{Bioinformatics Scientist}
+
+%%%%%%%%%%%%%%%%%%%
+%% PERSONAL DATA %%
+%%%%%%%%%%%%%%%%%%%
+
+\firstname{Denis} \familyname{Jacob~Machado,~Ph.D.}
+\address{}{}{Charlotte -- NC, USA}
+\email{dmachado@uncc.edu}
+\homepage{about.me/machadodj}
+\mobile{+1 980 287 9452}
+% \extrainfo{\faLinkedinSquare~https://www.linkedin.com/in/machadodj}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER AND FOOTER %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xcolor}
+\usepackage{etoolbox}
+\usepackage{fancyhdr}
+    \definecolor{headercolor}{rgb}{0.35,0.35,0.35} % dark grey
+    \pagestyle{fancy}
+    \fancypagestyle{plain}{\fancyhf{}}
+    \renewcommand{\headrulewidth}{0pt}
+    \headheight 15pt
+    \footskip 45pt
+    \renewcommand{\footrulewidth}{0pt}
+    \newcommand{\helv}{
+    \fontsize{8}{10}\selectfont}
+    \makeatletter
+        \patchcmd{\@fancyhead}{\rlap}{\color{headercolor}\rlap}{}{}
+        \patchcmd{\headrule}{\hrule}{\color{headercolor}\hrule}{}{}
+        \patchcmd{\@fancyfoot}{\rlap}{\color{headercolor}\rlap}{}{}
+        \patchcmd{\footrule}{\hrule}{\color{headercolor}\hrule}{}{}
+        \makeatother
+        %\fancyfoot[LE]{\color{headercolor}\nouppercase{\helv\small{\thepage}}}
+        %\fancyhead[LE]{\color{headercolor}\nouppercase{\helv\small{Denis Jacob Machado, Ph.D.}}}
+        %\fancyfoot[RO]{\color{headercolor}\nouppercase{\helv\small{\thepage}}}
+        %\fancyhead[RO]{\color{headercolor}\nouppercase{\helv\small{Denis Jacob Machado, Ph.D.}}}
+        \fancyfoot[L]{\color{headercolor}\nouppercase{\helv\small{}}}
+        \fancyfoot[R]{\color{headercolor}\nouppercase{\helv\small{}}}
+        \nopagenumbers{}
+
+
+\begin{document}
+    \thispagestyle{empty}
+    \maketitle
+
+%%%%%%%%%%%%%%%%
+%% HIGHLIGHTS %%
+%%%%%%%%%%%%%%%%
+
+% \vspace{-1em}
+\vspace{-1em}
+\vspace{-1em}
+
+%\cvline{\textbf{Birth}}{Nov. 21, 1985. Andradina--SP, Brazil}
+% \cvline{\textbf{Address}}{9201 University City Blv, Bioinformatics 224. Charlotte--NC, 28223}
+% \cvline{\textbf{Work}}{(704) 687-5765}
+% \cvline{\textbf{Mobile}}{(980) 287-9452}
+% \cvline{\textbf{Email}}{\href{mailto:dmachado@uncc.edu}{dmachado@uncc.edu}}
+% \cvline{\textbf{Citizenship}}{Brazil}
+% \cvline{\textbf{CV Lattes}}{\href{http://lattes.cnpq.br/0830556066646858}{http://lattes.cnpq.br/0830556066646858}}
+% \cvline{\textbf{ResearcherID}}{I-1452-2015}
+% \cvline{\textbf{Publons}}{\href{https://publons.com/researcher/665479/denis-jacob-machado/}{publons.com/researcher/665479}}
+% \cvline{\textbf{ORCID}}{0000-0001-9858-4515}
+% \cvline{\textbf{Skype}}{denisjmachado}
+% \cvline{\textbf{LinkedIn}}{\href{https://www.linkedin.com/in/machadodj}{linkedin.com/in/machadodj}}
+% \cvline{\textbf{Homepage}}{\href{http://http//about.me/machadodj}{about.me/machadodj}}
+% \section{Professional Summary}
+%     \vspace{-0.2em}
+%     Highly skilled bioinformatics scientist with experience in interdisciplinary projects and translational research. Strong publication record raging from computational biology to comparative genomics and epidemiology.
+%     \vspace{-0.5em}
+
+% \section{Highlights}
+    \begin{itemize}
+         \item Bioinformatics scientist and zoologist with strong math, statistics, and programming background and peer-reviewed publications in top journals in phylogenetics, molecular biology, genomics, and virology.
+        \item $3+$ years of experience using machine learning, predictive modeling, high throughput data processing, and data mining algorithms to solve challenging practical problems.
+        \item $10+$ years of uninterrupted research funding, including highly competitive awards, and an extensive track record of developing and organizing multidisciplinary research projects.
+        \item $10+$ years of experience in molecular biology labs, developing and optimizing protocols for gene expression analysis and high-throughput sequencing using technologies such as Illumina, PacBiom, and Hi-C.
+        \item Concepts used in my current and past projects include AWS, Git, API integration, Flask, \LaTeX, statistical modeling, Jupyter Notebook, Linux, Java, Monte Carlo methods, Tableau, R, Python, and SQL.
+    \end{itemize}
+% \vspace{-0.5em}
+
+%%%%%%%%%%%%%%%%%%%%
+%% POSITIONS HELD %%
+%%%%%%%%%%%%%%%%%%%%
+
+% \vspace{-0.5em}
+
+\section{Work Experience}
+    \cventry{2019--current}
+    	{Postdoctoral Researcher}
+    	{University of North Carolina at Charlotte}
+    	{Charlotte--NC}
+    	{USA}
+    	{
+    		\textbullet~I studied the origins, evolution, host transformations of coronaviruses. I also employed big data analysis to categorize different variants of SARS-CoV-2 and applied deep learning techniques to produce highly accurate structure predictions of their proteins.\\
+    		\textbullet~I created the first programs for gene prediction and annotation of \textit{Flaviviridae} genomes (including viruses such as Hepatites C, yellow fever, dengue, and Zika virus) and deployed the pipelines as a web application.\\
+    		\textbullet~I produced and analyzed \textit{de novo} assemblies of highly-regenerative non-model organisms. I used gene expression analysis to identify genes related to tissue regeneration and created online databases to compare genes associated with different phenotypes of clinical interest.
+    	}
+    %
+    \cventry{2018--2019}
+    	{Research Collaborator}
+    	{University of São Paulo}
+    	{São Paulo--SP}
+    	{Brazil}
+    	{
+    		\textbullet~I built and administered the first computer clusters at the Muzeum of Zoology of the University of São Paulo (MUZUSP), providing training and technology to bridge the gap between basic animal research and applied bioinformatics with potential biomedical significance.\\
+    		\textbullet~I participated in the planning, funding acquisition, and implementation of the first laboratory to sequence historical DNA (e.g., from degraded museum samples) at the Department of Zoology of the University of São Paulo (USP).\\
+    		\textbullet~I developed new genome skimming techniques to retrieve genomic data of non-model organisms when samples were small or degraded. I also created the necessary software to facilitate the analysis of organelle genomes, including new indices that check for the completeness of circular genomes or misalignments in other types of contigs and scaffolds.
+    	}
+    %
+    \cventry{2018--2019}
+    	{Invited Lecturer}
+    	{University of São Paulo}
+    	{São Paulo--SP}
+    	{Brazil}
+    	{
+    	    \textbullet~I created and taught the first graduate-level courses in bioinformatics and computer programming for biologists at USP's Graduate Program in Zoology, which is ranked first in animal research worldwide.
+    	}
+    %
+    \cventry{Jul--Aug 2017}
+    	{Invited Lecturer}
+    	{University of Magdalena}
+    	{Santa Marta D.T.C.H.}
+    	{Colombia}
+    	{
+    	    \textbullet~I designed and taught the first course in bioinformatics at the University of Magdalena. Classes included practical and theoretical lessons on DNA extraction and isolation, high-throughput sequencing, sequence alignment, reference, and \textit{de novo} genome assembly, and gene prediction and annotation.\\
+    	    \textbullet~I also offered consultation to faculty members involved in animal research who needed web and dry lab solutions for next-generation sequence analyses.
+    	}
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% FORMAL EDUCATION %%
+%%%%%%%%%%%%%%%%%%%%%%
+
+% \vspace{-0.5em}
+
+\section{Education}
+	\cventry{2013--2018}
+		{Ph.D. in Bioinformatics}
+		{University of São Paulo}
+		{São Paulo--SP}
+		{Brazil}
+		{}
+	\cventry{2010--2012}
+		{Master's in Zoology}
+		{University of São Paulo}
+		{São Paulo--SP}
+		{Brazil}
+		{}
+	\cventry{2006--2009}
+		{Bachelor's in Biological Sciences}
+		{São Paulo State University}
+		{São Vicente--SP}
+		{Brazil}
+		{}
+
+%%%%%%%%%%%%
+%% AWARDS %%
+%%%%%%%%%%%%
+
+% \section{Recent Honors \& Awards}
+%     \vspace{-0.2em}
+%     \cventry{2016}
+%     	{Grand Stars in Human Health}
+%     	{Grand Challenges Canada}
+%     	{Canada}
+%     	{}{}
+%     \cventry{2016}
+%     	{GE Foundation's Most Implementable Solution}
+%     	{Zika Innovation Hack-a-thon}
+%     	{USA}
+%     	{}{}
+%     \cventry{2013}
+%     	{Willi Hennig Award}
+%     	{The Willi Hennig Society}
+%     	{Germany}
+%     	{}{}
+%     \cventry{2013--2018}
+%     	{Doctorate Scholarship Award}
+%     	{FAPESP}
+%     	{Brazil}
+%     	{}{}
+%     \vspace{-0.8em}
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+% \section{Selected Publications}
+% 	{
+% 		\setlength{\parskip}{.2em}\renewcommand{\baselinestretch}{2.0}
+% 		\begin{hangparas}{.25in}{1}
+
+%         Jacob Machado D., Scott R., Guirales S. \& Janies, D. A. (2021) Fundamental evolution of all \emph{Orthocoronavirinae} including three deadly lineages descendent from Chiroptera‐hosted coronaviruses: SARS‐CoV, MERS‐CoV and SARS‐CoV‐2. \emph{Cladistics}. \href{https://doi.org/10.1111/cla.12454}{DOI: 10.1111/cla.12454}.
+    
+%         Jacob Machado D., Castroviejo-Fisher S. \& Grant T. (2021) Evidence of absence treated as absence of evidence: the effects of variation in the number and distribution of gaps treated as missing data on the results of standard maximum likelihood analysis. \emph{Molecular Phylogenetics and Evolution}. \href{https://doi.org/10.1016/j.ympev.2020.106966}{DOI: 10.1016/j.ympev.2020.106966}.
+    
+%         Jacob Machado D., Schneider A.D \& Janies D. (2020) Enhanced genome annotation strategy provides novel insights on the phylogeny of \emph{Flaviviridae}. \emph{Viruses}. \href{https://www.mdpi.com/1999-4915/12/8/892}{DOI: 10.3390/v12080892}.
+
+% 		\end{hangparas}
+% 	}
+    
+%     \vspace{1em}
+    
+%     {\color{MyLightBlue} Visit \href{https://orcid.org/0000-0001-9858-4515}{https://orcid.org/0000-0001-9858-4515} for a complete list of publications.\\}
+
+
+%%%%%%%%%%%%%%
+%% REVIEWER %%
+%%%%%%%%%%%%%%
+
+% \section{Editorial Roles}
+%     \cvline{2021--current}
+% 	    {\textbf{Review Editor}: Frontiers in Bioinformatic and Predictive Virology}
+% 	\cvline{---}
+% 	    {\textbf{Review Editor}: Frontiers in Extreme Microbiology}
+% 	\cvline{---}
+% 	    {\textbf{Review Editor}: Frontiers in Evolutionary and Genomic Microbiology}
+%     {\color{MyLightBlue} See my Loop profile at  \href{https://loop.frontiersin.org/people/1352271/overview}{loop.frontiersin.org/people/1352271/overview}.\\}
+
+% \section{Reviews}
+
+%     I have completed 28 reviews of 26 manuscripts in 12 academic journals in the fields of organelar genomes, molecular biology, evolutionary biology, comparative genomics, and biochemestry.
+
+%     {\color{MyLightBlue} See my Publons profile at  \href{https://publons.com/researcher/665479/denis-jacob-machado/}{publons.com/researcher/665479/denis-jacob-machado}.\\} 
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+% \begin{minipage}[t]{0.5\textwidth}
+%     \section{Languages}
+%     	\cvlanguage{Portuguese}{Native}{}
+%     	\cvlanguage{English}{Fluent}{}
+%      	\cvlanguage{Spanish}{Proficient}{}
+%     \section{Bioinformatics Skills}
+%         \begin{itemize}%\setlength\itemsep{0.5em}
+%             \item High throughput data analysis
+%             \item Data mining/wrangling
+%             \item Statistics
+%             \item Deep understanding of differential gene detection
+%             \item Responsive Web Design
+%             \item Pipeline programming and optimization
+%             \item Phylogenetics and evolutionary analyses
+%         \end{itemize}
+% \end{minipage}%
+% \begin{minipage}[t]{0.5\textwidth}
+%     \section{Programming Languages}
+%     	\cvline{Advanced}
+%     		{\small \texttt{Python},~\texttt{R},~\texttt{Bash},~and~\texttt{Perl}}
+%     	\cvline{Intermidiate}
+%     		{\small \texttt{JavaScript},~\texttt{Java},~\texttt{PHP},~and~\texttt{Haskell}}
+%     		{\color{MyLightBlue}\href{https://gitlab.com/MachadoDJ}{\faGitlab~gitlab.com/MachadoDJ} ~\href{http://www.ib.usp.br/grant/anfibios/researchSoftware.html}{\faExternalLink~www.ib.usp.br/grant}}
+%     \section{Cluster Management}
+%         I have managed the following Linux clusters at different institutes of the University of São Paulo (USP), Brazil:\\~\\
+%     	\cventry{2013--current}{ACE}{Muzeum of Zoology}{}{}
+%     		{\vspace{-0.5em}\color{MyLightBlue}\faExternalLink~\href{https://www.ib.usp.br/grant/anfibios/researchHPC.html}{www.ib.usp.br/grant}}
+%     	\cventry{2009--2013}{Abacus}{Biosciences Institute}{}{}
+%     		{\vspace{-0.5em}\color{MyLightBlue}\faExternalLink~\href{https://www.ib.usp.br/hpc/}{www.ib.usp.br/hpc}}
+% \end{minipage}
+
+% \section{Additional Skills}
+%     \begin{itemize}
+%         \item Exceptional understanding of evolution and phylogenetics
+%         \item Well developed talent at statistical methods and computing for big data
+%         \item Has a communication style that is effective for both technical and lay audiences
+%         \item Experience organizing international scientific conferences
+%         \item Conducted numerous successful multidisciplinary projects involving teams of international researchers
+%         \item Deep experience in planning, conducting, and reporting of studies
+%     \end{itemize}
+
+\vfill
+
+{\color{MyLightBlue}~For additional information and link to my complete \emph{Curriculum Vit\ae}, visit \href{https://about.me/machadodj}{https://about.me/machadodj}.}
+
+\end{document}
