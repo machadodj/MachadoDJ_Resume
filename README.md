@@ -2,11 +2,7 @@
 
 ## What is inside?
 
-Enclosed, you will find the resume of Denis Jacob Machado, Ph.D., written in LaTeX using the ModernCV's casual style.
-
-## Dependencies
-
-
+Enclosed, you will find the resume of Denis Jacob Machado, Ph.D., written in LaTeX using ModernCV's casual style.
 
 ## How to compile?
 
@@ -50,4 +46,4 @@ $ sudo apt-get install texlive-latex-extra
 
 ## How can I modify this project?
 
-The main file is `MachadoDJ_Resume.tex`. It calls for different sections of the CV, each one at a different file inside the `tex/` directory. All `.tex` files contain comments that may help modifying this CV at your will.
+The main file is `MachadoDJ_Resume.tex`. It calls for different sections of the CV, each one in a different file inside the `tex/` directory. All `.tex` files contain comments that may help modify this CV at your will.

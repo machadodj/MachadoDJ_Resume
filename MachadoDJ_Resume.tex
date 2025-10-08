@@ -3,199 +3,206 @@
 %%%%%%%%%%%%%%
 
 \documentclass[11pt, letterpaper, sans]{moderncv}
+
 \moderncvstyle{classic}
 \moderncvcolor{grey}
 \renewcommand{\familydefault}{\sfdefault}
+
 \usepackage{tikz}
 \usepackage{xcolor}
 \usepackage{multicol}
-\usepackage{fontawesome}
-\usepackage[utf8]{inputenc}
+\usepackage[hmargin=1in,vmargin=1in]{geometry}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+\usepackage{fancyhdr}
 \usepackage{hanging}
-\usepackage{geometry}
-\geometry{left=1.5cm, right=1.5cm, top=0.5cm, bottom=1.5cm, heightrounded}
+
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
 
 %%%%%%%%%%%%%%%%%%%
 %% PERSONAL DATA %%
 %%%%%%%%%%%%%%%%%%%
 
-\firstname{Denis} \familyname{Jacob~Machado,~Ph.D.}
-<<<<<<< HEAD
-\address{}{}{UNC Charlotte. Charlotte--NC, USA}
-\email{dmachado@charlotte.edu}
-\homepage{https://phyloinformatics.com}
-\mobile{+1 (980) 287-9452}
-=======
-\address{}{}{Charlotte--NC, USA}
-\homepage{phyloinformatics.com}
-\email{dmachado@uncc.edu}
-\phone{+1 (704) 687-8564}
->>>>>>> d9f6b1d8624d446d63344f082d35ab75f97353f4
+\firstname{Denis} \familyname{Jacob~Machado}
+    \address{Charotte--NC, USA}{}{}
+    \homepage{phyloinformatics.com}
+    \email{dmachado@uncc.edu}
+    \phone{+1 (704) 687-8564}
 
-%%%%%%%%%%%%%%%%%%%%%%%
-%% HEADER AND FOOTER %%
-%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
 
-\usepackage{xcolor}
-\usepackage{etoolbox}
-\usepackage{fancyhdr}
-\definecolor{headercolor}{rgb}{0.35,0.35,0.35} % dark grey
-\pagestyle{fancy}
-\fancypagestyle{plain}{\fancyhf{}}
-\renewcommand{\headrulewidth}{0pt}
-\headheight 15pt
-\footskip 45pt
-\renewcommand{\footrulewidth}{0pt}
-\newcommand{\helv}{
-\fontsize{8}{10}\selectfont}
-\makeatletter
-\patchcmd{\@fancyhead}{\rlap}{\color{headercolor}\rlap}{}{}
-\patchcmd{\headrule}{\hrule}{\color{headercolor}\hrule}{}{}
-\patchcmd{\@fancyfoot}{\rlap}{\color{headercolor}\rlap}{}{}
-\patchcmd{\footrule}{\hrule}{\color{headercolor}\hrule}{}{}
-\makeatother
-\fancyfoot[L]{\color{headercolor}\nouppercase{\helv\small{}}}
-\fancyfoot[R]{\color{headercolor}\nouppercase{\helv\small{}}}
-\nopagenumbers{}
-
-\begin{document}\thispagestyle{empty}\maketitle
+\maketitle
 
 %%%%%%%%%%%%%%%%
 %% HIGHLIGHTS %%
 %%%%%%%%%%%%%%%%
 
-\vspace{-3em}
-
-<<<<<<< HEAD
-\textbullet~\textbf{Bioinformaticist} with strong background on invertebrate zoology, molecular biology, and bioinformatics.
-
-\textbullet~Peer-reviewed publications on topics including \textbf{genomics}, \textbf{evolution}, \textbf{parasitology}, \textbf{regeneration}, \textbf{emerging infectious diseases}, and \textbf{genomic epidemiology}.
-
-\textbullet~$5+$ years of experience using \textbf{machine learning} (e.g., PyTorch, TensorFlow), \textbf{predictive modeling}, \textbf{high-throughput data processing}, and \textbf{data mining} algorithms to solve practical problems in biology.
-
-\textbullet~$13+$ years of experience in \textbf{molecular biology}, \textbf{high-throughput sequencing} (e.g., Illumina, PacBio, Hi-C, GWAS, and RNA-Seq), and sequence assembly, and differential gene expression analyses.
-=======
-\textbullet~ \textbf{Bioinformaticist} with strong biology, biostatistics, and programming background.
-
-\textbullet~ Peer-reviewed publications on topics including \textbf{genomics}, \textbf{evolution}, \textbf{parasitology}, \textbf{regeneration}, \textbf{emerging infectious diseases}, and \textbf{genomic epidemiology}.
-
-\textbullet~ $3+$ years of experience using \textbf{machine learning} (e.g., PyTorch, TensorFlow), \textbf{predictive modeling}, \textbf{high-throughput data processing}, and \textbf{data mining} algorithms to solve practical problems.
-
-\textbullet~ $10+$ years of experience in \textbf{molecular biology}, \textbf{high-throughput sequencing} (e.g., Illumina, PacBio, Hi-C, GWAS, and RNA-Seq), and sequence assembly, and differential gene expression analyses.
-
-% \textbullet~ Concepts used in my current and past projects include Python, Flask, R, Shiny, Tableu, SQL, Git, Jupyter, AlphaFold2, RoseTTAFold, HADDOCK, SQL, and AWS.
->>>>>>> d9f6b1d8624d446d63344f082d35ab75f97353f4
+\begin{itemize}
+    \item \textbf{Computational biologist} integrating molecular biology, bioinformatics, and evolutionary genomics to study health-relevant organisms and emerging infectious diseases.
+    \item Expertise in \textbf{genomics}, \textbf{phylogenetics}, and \textbf{machine learning} for large-scale biological data analysis, including \textbf{genomic epidemiology} and \textbf{AI-driven discovery}.
+    \item $15+$ years of experience in \textbf{molecular biology}, \textbf{high-throughput sequencing} (Illumina, PacBio, RNA-Seq, Hi-C), genome assembly, and transcriptomic analysis.
+    \item $7+$ years applying \textbf{predictive modeling}, \textbf{data mining}, and \textbf{AI/ML frameworks} (PyTorch, TensorFlow) to biological and public-health problems.
+    \item Proven record of \textbf{peer-reviewed publications}, leadership in \textbf{computational phylogenetics}, and mentoring of multidisciplinary research teams.
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%
 %% POSITIONS HELD %%
 %%%%%%%%%%%%%%%%%%%%
 
-\vspace{-0.5em}
+\section{Positions Held}
 
-\section{Work Experience}
-<<<<<<< HEAD
+\cventry{2022--Current}
+    {Assistant Professor in Bioinformatics}
+    {University of North Carolina at Charlotte}
+    {Charlotte--NC}
+    {USA}
+    {}
+    % \begin{itemize}
+    %     \item Investigate new pathogens' emergence, evolution, and spread focusing on preventing and treating infectious diseases.\\
+    %     \item Create computational and molecular solutions to make data from biorepositories more readily available to biomedical research.
+    %     \item First line of research: Investigate new pathogens’ emergence, evolution, and spread, focusing on preventing and treating infectious diseases.
+    %     \item Second line of research: Create computational and molecular solutions to make data from biorepositories more readily available to biomedical research.
+    %     \item For more information, please visit \href{https://phyloinformatics.com/}{phyloinformatics.com}.
+    % \end{itemize}
+
 \cventry{2019--2022}
-=======
-\cventry{Aug/15/22--Current}
->>>>>>> d9f6b1d8624d446d63344f082d35ab75f97353f4
-{Assistant Professor in Bioinformatics}
-{University of North Carolina at Charlotte}
-{Charlotte--NC}
-{USA}
-{
-<<<<<<< HEAD
-\textbullet~Investigate new pathogens' emergence, evolution, and spread focusing on preventing and treating infectious diseases.\\
-\textbullet~Create computational and molecular solutions to make data from biorepositories more readily available to biomedical research.\\
-=======
-\textbullet~First line of research: Investigate new pathogens’ emergence, evolution, and spread, focusing on preventing and treating infectious diseases.\\
-\textbullet~Second line of research: Create computational and molecular solutions to make data from biorepositories more readily available to biomedical research.\\
-\textbullet~For more information, please visit \href{https://phyloinformatics.com/}{phyloinformatics.com}.\\
->>>>>>> d9f6b1d8624d446d63344f082d35ab75f97353f4
-}
-%
-\cventry{2019--2022}
-{Postdoctoral Researcher}
-{University of North Carolina at Charlotte}
-{Charlotte--NC}
-{USA}
-{
-<<<<<<< HEAD
-\textbullet~I conducted the most diverse and complete analysts of the evolution of coronaviruses (e.g., SARS-CoV, MERS-CoV, and SARS-CoV-2) and flaviviruses (e.g., dengue, zika, and west-nile virus)
-\textbullet~Produced draft genomes of highly regenerative echinoderms such as brittle stars and sea cucumbers for
-comparative genomics and tissue regeneration research
-=======
-\textbullet~I studied the origins, evolution, and zoonotic events of coronaviruses. I also employed big data analysis to categorize different variants of SARS-CoV-2 and applied deep learning techniques to produce highly accurate structure predictions of their proteins.\\
-\textbullet~I predict how structural changes in the receptor-binding domain pf the spike protein of different variants of SARS-CoV-2 may reduce antibody interaction without completely evading existing neutralizing antibodies.\\ % (and therefore current vaccines).\\
-\textbullet~I created the first programs for gene prediction and annotation of \textit{Orthocoronavirinae} (including SARS-COV-2) and \textit{Flaviviridae} (including Hepatites C, yellow fever, dengue, and Zika virus).\\ % and deployed the pipelines as a web application.\\
-\textbullet~Produced draft genomes of highly regenerative echinoderms such as brittle stars and sea cucumbers for comparative genomics and tissue regeneration research.
-%\textbullet~My current research focus on evolutionary approaches to transform multi-omic data into knowledge and accelerate the pace of antiviral drug discovery and development.
->>>>>>> d9f6b1d8624d446d63344f082d35ab75f97353f4
-}
+    {Postdoctoral Researcher}
+    {University of North Carolina at Charlotte}
+    {Charlotte--NC}
+    {USA}
+    {}
+    % \begin{itemize}
+    %     \item I conducted the most diverse and complete analysts of the evolution of coronaviruses (e.g., SARS-CoV, MERS-CoV, and SARS-CoV-2) and flaviviruses (e.g., dengue, zika, and west-nile virus)
+    %     \item Produced draft genomes of highly regenerative echinoderms such as brittle stars and sea cucumbers for
+    %     comparative genomics and tissue regeneration research
+    %     \item I studied the origins, evolution, and zoonotic events of coronaviruses. I also employed big data analysis to categorize different variants of SARS-CoV-2 and applied deep learning techniques to produce highly accurate structure predictions of their proteins.
+    %     \item I predict how structural changes in the receptor-binding domain pf the spike protein of different variants of SARS-CoV-2 may reduce antibody interaction without completely evading existing neutralizing antibodies.
+    %     \item I created the first programs for gene prediction and annotation of \textit{Orthocoronavirinae} (including SARS-COV-2) and \textit{Flaviviridae} (including Hepatites C, yellow fever, dengue, and Zika virus).
+    %     \item Produced draft genomes of highly regenerative echinoderms such as brittle stars and sea cucumbers for comparative genomics and tissue regeneration research.
+    %     \item My current research focus on evolutionary approaches to transform multi-omic data into knowledge and accelerate the pace of antiviral drug discovery and development.
+    % \end{itemize}
+
+\cventry{2018--2019}
+    {Research Collaborator}
+    {University of São Paulo}
+    {São Paulo--SP}
+    {Brazil}
+    {}
+    % \begin{itemize}
+    %     \item I built and administered the first computer clusters at the Muzeum of Zoology of the University of São Paulo (MUZUSP).
+    %     \item I participated in the planning, funding acquisition, and implementation of the first laboratory to sequence historical DNA at the Department of Zoology of the University of São Paulo (USP).
+    %     \item I developed new genome skimming techniques to retrieve genomic data of non-model organisms when samples were small or degraded. I also created the necessary software to facilitate the analysis of organelle genomes.
+    % \end{itemize}
 %
 \cventry{2018--2019}
-{Research Collaborator}
-{University of São Paulo}
-{São Paulo--SP}
-{Brazil}
-{
-\textbullet~I built and administered the first computer clusters at the Muzeum of Zoology of the University of São Paulo (MUZUSP).\\ % , providing training and technology to bridge the gap between basic animal research and applied bioinformatics with potential biomedical significance.\\
-\textbullet~I participated in the planning, funding acquisition, and implementation of the first laboratory to sequence historical DNA at the Department of Zoology of the University of São Paulo (USP).\\ % (e.g., from degraded museum samples)
-\textbullet~I developed new genome skimming techniques to retrieve genomic data of non-model organisms when samples were small or degraded. I also created the necessary software to facilitate the analysis of organelle genomes.\\ % , including new indices that check for the completeness of circular genomes or misalignments in other types of contigs and scaffolds.
-}
+    {Invited Lecturer}
+    {University of São Paulo}
+    {São Paulo--SP}
+    {Brazil}
+    {}
+    % \begin{itemize}
+    %     \item I created and taught the first graduate-level courses in bioinformatics and computer programming for biologists at USP's Graduate Program in Zoology.
+    % \end{itemize}
 %
-\cventry{2018--2019}
-{Invited Lecturer}
-{University of São Paulo}
-{São Paulo--SP}
-{Brazil}
-{
-\textbullet~I created and taught the first graduate-level courses in bioinformatics and computer programming for biologists at USP's Graduate Program in Zoology. % , which is ranked first in animal research worldwide.
-}
-%
-\cventry{Jul--Aug 2017}
-{Invited Lecturer}
-{University of Magdalena}
-{Santa Marta D.T.C.H.}
-{Colombia}
-{
-\textbullet~I designed and taught the first course in bioinformatics at the University of Magdalena. Classes included practical and theoretical lessons on DNA extraction and isolation, high-throughput sequencing, sequence alignment, reference, and \textit{de novo} genome assembly, and gene prediction and annotation.\\
-\textbullet~I also offered consultation to faculty members involved in animal research who needed web and dry lab solutions for next-generation sequence analyses.
-}
+\cventry{2017, 2025}
+    {Invited Lecturer}
+    {University of Magdalena}
+    {Santa Marta D.T.C.H.}
+    {Colombia}
+    {
+    % \begin{itemize}
+    %     \item I designed and taught the first course in bioinformatics at the University of Magdalena. Classes included practical and theoretical lessons on DNA extraction and isolation, high-throughput sequencing, sequence alignment, reference, and \textit{de novo} genome assembly, and gene prediction and annotation.
+    %     \item I also offered consultation to faculty members involved in animal research who needed web and dry lab solutions for next-generation sequence analyses.
+    % \end{itemize}
+    }
 
 %%%%%%%%%%%%%%%%%%%%%%
 %% FORMAL EDUCATION %%
 %%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{-1em}
-
 \section{Education}
 
 \cventry{2013--2018}
-{Ph.D. in Bioinformatics}
-{University of São Paulo (USP)}
-{São Paulo--SP}
-{Brazil}
-{}
+    {Ph.D. in Bioinformatics}
+    {University of São Paulo (USP)}
+    {São Paulo--SP}
+    {Brazil}
+    {}
 
 \cventry{2010--2012}
-{Master's in Zoology (Parasitology)}
-{University of São Paulo (USP)}
-{São Paulo--SP}
-{Brazil}
-{}
+    {Master's in Zoology (Parasitology)}
+    {University of São Paulo (USP)}
+    {São Paulo--SP}
+    {Brazil}
+    {}
 
 \cventry{2006--2009}
-{Bachelor's in Biological Sciences (Marine Biology)}
-{São Paulo State University (UNESP)}
-{São Vicente--SP}
-{Brazil}
-{}
+    {Bachelor's in Biological Sciences (Marine Biology)}
+    {São Paulo State University (UNESP)}
+    {São Vicente--SP}
+    {Brazil}
+    {}
 
-<<<<<<< HEAD
-Visit my profile on Google Scholar at \url{https://scholar.google.com/citations?user=TK6Ms80AAAAJ&hl=pt-BR}.\\
-You will find my \textit{curriculum vitae} and other professional information at \url{https://phyloinformatics.com}.
-=======
-You will find my \textit{curriculum vitae} and other professional information at \href{https://phyloinformatics.com/members/Denis_Jacob_Machado.html}{phyloinformatics.com}.
->>>>>>> d9f6b1d8624d446d63344f082d35ab75f97353f4
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\section{Selected Publications}
+
+    \begin{hangparas}{.2in}{1}
+    
+    Márquez, R., \textbf{Jacob Machado, D.}, Nouri, R., Gendreau, K. L., Janies, D., Saporito, R. A., Kronforst, M. R., \& Grant, T. (2025). A draft genome assembly for the dart-poison frog \textit{Phyllobates terribilis}. \textit{Gigabyte}. \href{https://doi.org/10.46471/gigabyte.157}{10.46471/gigabyte.157}.
+    
+    Alves, P. V., da Silva, R. J., Scholz, T., de Chambrier, A., Luque, J. L., Duchenko, A., Janies, D., \& \textbf{Jacob Machado, D.} (2025). Machine learning models accurately predict clades of proteocephalidean tapeworms (Onchoproteocephalidea) based on host and biogeographical data. \textit{Cladistics}. \href{https://doi.org/10.1111/cla.12610}{10.1111/cla.12610}.
+    
+    Nouri, R., Mashanov, V., Harris, A., New, G., Taylor, W., Janies, D., Reid, R. W., \& \textbf{Jacob Machado, D.} (2024). Unveiling putative modulators of mutable collagenous tissue in the brittle star \textit{Ophiomastix wendtii}: an RNA-Seq analysis. \textit{BMC Genomics}. \href{https://doi.org/10.1186/s12864-024-10926-7}{10.1186/s12864-024-10926-7}.
+    
+    \textbf{Jacob Machado, D.}, Marques, F. P. L., Jiménez-Ferbans, L., \& Grant, T. (2022). An empirical test of the relationship between the bootstrap and likelihood ratio support in maximum likelihood phylogenetic analysis. \textit{Cladistics}. \href{https://doi.org/10.1111/cla.12496}{10.1111/cla.12496}.
+    
+    \textbf{Jacob Machado, D.}, Scott, R., Guirales, S., \& Janies, D. A. (2021). Fundamental evolution of all Orthocoronavirinae including three deadly lineages descendent from Chiroptera-hosted coronaviruses: SARS-CoV, MERS-CoV and SARS-CoV-2. \textit{Cladistics}. \href{https://doi.org/10.1111/cla.12454}{10.1111/cla.12454}.
+    
+    Grant, T., Rada, M., Anganoy-Criollo, M., Batista, A., Dias, P. H., Jeckel, A. M., \textbf{Jacob Machado, D.}, \& Rueda-Almonacid, J. V. (2017). Phylogenetic systematics of dart-poison frogs and their relatives revisited (Anura: Dendrobatoidea). \textit{South American Journal of Herpetology}, 12(s1), S1--S90. \href{https://doi.org/10.2994/sajh-d-17-00017.1}{10.2994/sajh-d-17-00017.1}.
+    
+    Trevisan, B., Alcantara, D. M. C., \textbf{Machado, D. J.}, Marques, F. P. L., \& Lahr, D. J. G. (2019). Genome skimming is a low-cost and robust strategy to assemble complete mitochondrial genomes from ethanol-preserved specimens in biodiversity studies. \textit{PeerJ}, 7, e7543. \href{https://doi.org/10.7717/peerj.7543}{10.7717/peerj.7543}.
+    
+    Orrico, V. G. D., Grant, T., Faivovich, J., Rivera‐Correa, M., Rada, M. A., Lyra, M. L., Cassini, C. S., Valdujo, P. H., Schargel, W. E., \textbf{Machado, D. J.}, Wheeler, W. C., Barrio‐Amorós, C., Loebmann, D., Moravec, J., Zina, J., Solé, M., Sturaro, M. J., Peloso, P. L. V., Suarez, P., \& Haddad, C. F. B. (2021). The phylogeny of Dendropsophini (Anura: Hylidae: Hylinae). \textit{Cladistics}. \href{https://doi.org/10.1111/cla.12429}{10.1111/cla.12429}.
+    
+    Ford, C. T., \textbf{Jacob Machado, D.}, \& Janies, D. A. (2022). Predictions of the SARS-CoV-2 Omicron variant (B.1.1.529) spike protein receptor-binding domain structure and neutralizing antibody interactions. \textit{Frontiers in Virology}, 2. \href{https://doi.org/10.3389/fviro.2022.830202}{10.3389/fviro.2022.830202}.
+    
+    \textbf{Machado, D. J.} (2015). YBYRÁ facilitates comparison of large phylogenetic trees. \textit{BMC Bioinformatics}. \href{https://doi.org/10.1186/s12859-015-0642-9}{10.1186/s12859-015-0642-9}.
+    
+    \end{hangparas}
+
+%%%%%%%%%%%
+%% LINKS %%
+%%%%%%%%%%%
+
+\section{Links}
+
+    \begin{itemize}
+        \item \textbf{ORCiD:} \url{https://orcid.org/my-orcid?orcid=0000-0001-9858-4515}
+        \item \textbf{Google Scholar:} \url{https://scholar.google.com/citations?user=TK6Ms80AAAAJ&hl=pt-BR}
+        \item \textbf{LinkedIn:} \url{https://www.linkedin.com/in/machadodj}
+        \item \textbf{Phyloinformatics Lab:} \url{https://phyloinformatics.com}
+        \item \textbf{UNC Charlotte's CCI:} \url{https://cci.charlotte.edu/directory/denis-jacob-machado}
+        \item \textbf{Web of Science:} \url{https://www.webofscience.com/wos/author/record/I-1452-2015}
+        \item \textbf{Loop:} \url{https://loop.frontiersin.org/people/1352271/overview}
+        \item \textbf{SciProfiles:} \url{https://sciprofiles.com/profile/machadodj}
+        \item \textbf{GitHub:} \url{https://github.com/machadodj}
+        \item \textbf{GitLab:} \url{https://gitlab.com/MachadoDJc}
+    \end{itemize}
 
 \end{document}
